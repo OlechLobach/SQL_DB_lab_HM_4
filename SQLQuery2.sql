@@ -29,3 +29,14 @@ INSERT INTO Wards (Building, Floor, Name) VALUES
 (1, 1, 'Ward A'),
 (3, 2, 'Ward B'),
 (5, 1, 'Ward C');
+GO
+
+INSERT INTO Doctors (Name, Phone, Premium, Salary, Surname) 
+VALUES ('James', '6677889900', 400, 1800, 'Newton');
+GO
+
+UPDATE Doctors SET Premium = 350 WHERE Surname = 'Smith';
+GO
+
+DELETE FROM Wards WHERE Name = 'Ward C';
+GO
